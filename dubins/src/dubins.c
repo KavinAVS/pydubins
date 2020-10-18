@@ -43,6 +43,14 @@ static double fmin(double a, double b) { return (a < b) ? a : b; }
 #define S_SEG (1)
 #define R_SEG (2)
 
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+
+#ifndef INFINITY
+    #define INFINITY HUGE_VAL
+#endif
+
 // The segment types for each of the Path types
 const int DIRDATA[][3] = {
     { L_SEG, S_SEG, L_SEG },
