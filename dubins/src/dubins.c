@@ -25,7 +25,6 @@
 #include <assert.h>
 
 #ifdef _MSC_VER
-#define INFINITY HUGE_VAL
 static double fmin(double a, double b) { return (a < b) ? a : b; }
 #endif
 
@@ -45,10 +44,6 @@ static double fmin(double a, double b) { return (a < b) ? a : b; }
 
 #ifndef M_PI
     #define M_PI 3.14159265358979323846
-#endif
-
-#ifndef INFINITY
-    #define INFINITY HUGE_VAL
 #endif
 
 // The segment types for each of the Path types
